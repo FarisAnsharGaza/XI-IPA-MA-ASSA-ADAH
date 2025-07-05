@@ -200,7 +200,7 @@
 /* Ubah di sini */
 .slogan-text {
   color: #1eff00;
-  font-size: 5vw;
+  font-size: 22pt;
   border-right: 2px solid #3cff00;
   display: inline-block;
   overflow: hidden;
@@ -212,7 +212,7 @@
 /* Responsif untuk layar kecil */
 @media (max-width: 400px) {
   .slogan-text {
-    font-size: 6vw;
+    font-size: 22pt;
   }
 }
 /*buat ingfo atau berita semoga*/
@@ -347,6 +347,13 @@
   to   { transform: rotate(360deg); }
 }
 
-ol{
-    font-size: 14pt;
+.nom{
+    font-size: 16pt;
+}
+li{
+    font-size: 16pt;
+}
+
+h3{
+    font-size: 16pt;
 }
