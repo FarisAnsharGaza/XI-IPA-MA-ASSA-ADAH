@@ -347,3 +347,6 @@
   to   { transform: rotate(360deg); }
 }
 
+ol{
+    font-size: 14pt;
+}
