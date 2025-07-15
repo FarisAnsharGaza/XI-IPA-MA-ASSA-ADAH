@@ -1,0 +1,216 @@
+.ingfo {
+  font-size: 16pt;
+}
+.author {
+  font-size: 18pt;
+  font-style: normal;
+}
+
+.ingfoheader {
+  background: url(alam.webp);
+  -webkit-text-fill-color: #ffffff;
+  justify-content: left;
+  font-family: "Times New Roman";
+  font-size: 50pt;
+  width: 100%;
+  height: 258px;
+  margin: 0%;
+  padding: 0%;
+  border-radius: 10px;
+  outline: 3px solid #00ffcc;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 0px -2px 0 black, 0px 2px 0 black, -2px 0px 0 black,
+    2px 0px 0 black;
+  animation: asep 1s infinite;
+}
+
+#slogansi {
+  color: #000000;
+  font-size: 22pt;
+  border-right: 2px solid #000000;
+  display: inline-block;
+  overflow: hidden;
+  word-wrap: break-word; /* biar bisa pindah baris */
+  white-space: normal; /* ✅ ubah dari nowrap jadi normal */
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .slogansi {
+    font-size: 6vw;
+  }
+}
+
+@keyframes asep {
+  0%,
+  100% {
+    outline: 5px solid #ff0000;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  50% {
+    outline: 5px #05a500;
+    box-shadow: none;
+    outline-style: solid;
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 60px 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.solar-system {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.sun {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px yellow;
+}
+
+.orbit {
+  position: absolute;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  animation: orbit linear infinite;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(var(--distance))
+    rotate(0deg);
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(var(--distance)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--distance)) rotate(-360deg);
+  }
+}
+
+.orbit.merkurius {
+  width: 120px;
+  height: 120px;
+}
+.orbit.venus {
+  width: 180px;
+  height: 180px;
+}
+.orbit.bumi {
+  width: 250px;
+  height: 250px;
+}
+.orbit.mars {
+  width: 320px;
+  height: 320px;
+}
+.orbit.jupiter {
+  width: 450px;
+  height: 450px;
+}
+.orbit.saturnus {
+  width: 550px;
+  height: 550px;
+}
+.orbit.uranus {
+  width: 650px;
+  height: 650px;
+}
+.orbit.neptunus {
+  width: 750px;
+  height: 750px;
+}
+
+.planet.merkurius {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  --distance: 60px;
+  animation-duration: 2s;
+}
+.planet.venus {
+  width: 15px;
+  height: 15px;
+  background-color: orange;
+  --distance: 90px;
+  animation-duration: 4s;
+}
+.planet.bumi {
+  width: 18px;
+  height: 18px;
+  background-color: blue;
+  --distance: 125px;
+  animation-duration: 6s;
+}
+.planet.mars {
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  --distance: 160px;
+  animation-duration: 12s;
+}
+.planet.jupiter {
+  width: 40px;
+  height: 40px;
+  background-color: brown;
+  --distance: 225px;
+  animation-duration: 30s;
+}
+.planet.saturnus {
+  width: 35px;
+  height: 35px;
+  background-color: yellow;
+  --distance: 275px;
+  animation-duration: 60s;
+}
+.planet.uranus {
+  width: 30px;
+  height: 30px;
+  background-color: cyan;
+  --distance: 325px;
+  animation-duration: 90s;
+}
+.planet.neptunus {
+  width: 28px;
+  height: 28px;
+  background-color: blue;
+  --distance: 375px;
+  animation-duration: 120s;
+}
+
+.info {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+}
+
+.planet:hover + .info {
+  display: block;
+}

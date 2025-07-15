@@ -1,250 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Faris Anshar Gaza" />
-  <meta name="keyword" content="11, IPA, ipa, 11 IPA, MA Assa'adah, Faris, sma, ma, okep" />
-  <meta name="description" content="Informasi mengenai kelas XI IPA MA Assa'adah" />
-  <link rel="shortcut icon" href="fvc.webp" type="image/x-icon" />
-  <title>Info Terbaru</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Faris Anshar Gaza" />
+    <meta
+      name="keyword"
+      content="11, IPA, ipa, 11 IPA, MA Assa'adah, Faris, sma, ma, okep"
+    />
+    <meta
+      name="description"
+      content="Informasi mengenai kelas XI IPA MA Assa'adah"
+    />
+    <link rel="shortcut icon" href="fvc.webp" type="image/x-icon" />
+    <title>Info Terbaru</title>
+    <link rel="stylesheet" href="tampil.css" />
+  </head>
 
-  <style>
-
- .ingfo{
-    font-size: 16pt;
-  }
-  .author{
-    font-size: 18pt;
-    font-style: normal;
-  }
-
-.ingfoheader{
-    background:url(alam.jpg);
-    -webkit-text-fill-color: #ffffff;
-    justify-content: left;
-    font-family: 'Times New Roman';
-    font-size: 50pt;
-    width: 100%; 
-    height: 258px;
-    margin: 0%;
-    padding: 0%;
-    border-radius: 10px;
-    outline: 3px solid #00ffcc;
-    text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black,
-    0px -2px 0 black,
-    0px 2px 0 black,
-    -2px 0px 0 black,
-    2px 0px 0 black;
-    animation: asep 1s infinite;
-}
-
-#slogansi {
-     color: #000000;
-  font-size: 22pt;
-  border-right: 2px solid #000000;
-  display: inline-block;
-  overflow: hidden;
-  word-wrap: break-word; /* biar bisa pindah baris */
-  white-space: normal;   /* ✅ ubah dari nowrap jadi normal */
-  padding: 10px;
-    }
-
-    @media (max-width: 480px) {
-  .slogansi {
-    font-size: 6vw;
-  }
-}
-
-             @keyframes asep{
-            0%, 100% {
-                outline:  5px solid #ff0000;
-                outline-offset: 0;
-                box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
-            }
-            50%{
-                 outline:  5px #05a500;
-                box-shadow: none;
-                outline-style: solid;
-            }
-        }
-
-    footer {
-      background-color: black;
-      padding: 60px 0;
-      text-align: center;
-      overflow-x: auto;
-    }
-
-    .solar-system {
-      position: relative;
-      width: 100%;
-      max-width: 800px;
-      height: 800px;
-      margin: 0 auto;
-    }
-
-    .sun {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background-color: yellow;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      box-shadow: 0 0 20px yellow;
-    }
-
-    .orbit {
-      position: absolute;
-      border: 1px dashed rgba(255, 255, 255, 0.5);
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .planet {
-      position: absolute;
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform-origin: center;
-      animation: orbit linear infinite;
-      transform: translate(-50%, -50%) rotate(0deg) translateX(var(--distance)) rotate(0deg);
-    }
-
-    @keyframes orbit {
-      from {
-        transform: rotate(0deg) translateX(var(--distance)) rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg) translateX(var(--distance)) rotate(-360deg);
-      }
-    }
-
-    .orbit.merkurius { width: 120px; height: 120px; }
-    .orbit.venus     { width: 180px; height: 180px; }
-    .orbit.bumi      { width: 250px; height: 250px; }
-    .orbit.mars      { width: 320px; height: 320px; }
-    .orbit.jupiter   { width: 450px; height: 450px; }
-    .orbit.saturnus  { width: 550px; height: 550px; }
-    .orbit.uranus    { width: 650px; height: 650px; }
-    .orbit.neptunus  { width: 750px; height: 750px; }
-
-    .planet.merkurius { width: 10px; height: 10px; background-color: gray;    --distance: 60px;  animation-duration: 2s; }
-    .planet.venus     { width: 15px; height: 15px; background-color: orange;  --distance: 90px;  animation-duration: 4s; }
-    .planet.bumi      { width: 18px; height: 18px; background-color: blue;    --distance: 125px; animation-duration: 6s; }
-    .planet.mars      { width: 14px; height: 14px; background-color: red;     --distance: 160px; animation-duration: 12s; }
-    .planet.jupiter   { width: 40px; height: 40px; background-color: brown;   --distance: 225px; animation-duration: 30s; }
-    .planet.saturnus  { width: 35px; height: 35px; background-color: yellow;  --distance: 275px; animation-duration: 60s; }
-    .planet.uranus    { width: 30px; height: 30px; background-color: cyan;    --distance: 325px; animation-duration: 90s; }
-    .planet.neptunus  { width: 28px; height: 28px; background-color: blue;    --distance: 375px; animation-duration: 120s; }
-
-    .info {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 5px;
-      border-radius: 5px;
-      font-size: 12px;
-      display: none;
-    }
-
-    .planet:hover + .info {
-      display: block;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="ingfoheader">
-      <h1 class="ingfoheader">Info Terbaru</h1>
-    </div>
-  </header>
-
-  <h1>Situs web kelas XI Ipa telah dibuat</h1>
-  <p class="ingfo">Alhamdulillah situs web kelas 11 ipa telah dibuat segala puji syukur kita panjatkan kepada allah.</p>
-  <p class="author">-Author: Faris Anshar Gaza</p>
-
-  <div id="slogansi"></div>
-
-  <footer>
-    <div class="solar-system">
-      <div class="sun"></div>
-
-      <div class="orbit merkurius">
-        <div class="planet merkurius"></div>
-        <div class="info">Merkurius: Planet terkecil dan terdekat dari Matahari</div>
+  <body>
+    <header>
+      <div class="ingfoheader">
+        <h1 class="ingfoheader">Info Terbaru</h1>
       </div>
-      <div class="orbit venus">
-        <div class="planet venus"></div>
-        <div class="info">Venus: Planet paling panas</div>
-      </div>
-      <div class="orbit bumi">
-        <div class="planet bumi"></div>
-        <div class="info">Bumi: Satu-satunya planet yang diketahui memiliki kehidupan</div>
-      </div>
-      <div class="orbit mars">
-        <div class="planet mars"></div>
-        <div class="info">Mars: Disebut Planet Merah karena warna permukaannya</div>
-      </div>
-      <div class="orbit jupiter">
-        <div class="planet jupiter"></div>
-        <div class="info">Jupiter: Planet terbesar di Tata Surya</div>
-      </div>
-      <div class="orbit saturnus">
-        <div class="planet saturnus"></div>
-        <div class="info">Saturnus: Memiliki cincin yang spektakuler</div>
-      </div>
-      <div class="orbit uranus">
-        <div class="planet uranus"></div>
-        <div class="info">Uranus: Berputar miring hampir 90 derajat</div>
-      </div>
-      <div class="orbit neptunus">
-        <div class="planet neptunus"></div>
-        <div class="info">Neptunus: Planet terjauh dari Matahari</div>
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <script>
-    const slogans = [
-      "Berita terkini, langsung ke layar Anda.",
-      "Fakta dan informasi tanpa basa-basi.",
-      "Dunia berubah, kami laporkan untukmu.",
-      "Tetap terhubung dengan kabar terbaru.",
-      "Bukan sekadar kabar, ini kenyataan.",
-      "Informasi akurat, setiap waktu.",
-      "Update cepat, tanpa drama.",
-      "Kabar hari ini, dampak untuk besok.",
-      "Buka mata, dengar dunia.",
-      "Semua berita penting, dalam genggamanmu."
-    ];
+    <h1>Situs web kelas XI Ipa telah dibuat</h1>
+    <p class="ingfo">
+      Alhamdulillah situs web kelas 11 ipa telah dibuat segala puji syukur kita
+      panjatkan kepada allah.
+    </p>
+    <p class="author">-Author: Faris Anshar Gaza</p>
 
-    let index = 0;
-    const sloganElement = document.getElementById("slogansi");
+    <div id="slogansi"></div>
 
-    function typeSlogan(text, i = 0) {
-      if (i === 0) sloganElement.textContent = "";
-      if (i < text.length) {
-        sloganElement.textContent += text.charAt(i);
-        setTimeout(() => typeSlogan(text, i + 1), 50);
-      } else {
-        setTimeout(() => {
-          index = (index + 1) % slogans.length;
-          typeSlogan(slogans[index]);
-        }, 2500);
-      }
-    }
+    <footer>
+      <div class="solar-system">
+        <div class="sun"></div>
 
-    typeSlogan(slogans[index]);
-  </script>
-</body>
+        <div class="orbit merkurius">
+          <div class="planet merkurius"></div>
+          <div class="info">
+            Merkurius: Planet terkecil dan terdekat dari Matahari
+          </div>
+        </div>
+        <div class="orbit venus">
+          <div class="planet venus"></div>
+          <div class="info">Venus: Planet paling panas</div>
+        </div>
+        <div class="orbit bumi">
+          <div class="planet bumi"></div>
+          <div class="info">
+            Bumi: Satu-satunya planet yang diketahui memiliki kehidupan
+          </div>
+        </div>
+        <div class="orbit mars">
+          <div class="planet mars"></div>
+          <div class="info">
+            Mars: Disebut Planet Merah karena warna permukaannya
+          </div>
+        </div>
+        <div class="orbit jupiter">
+          <div class="planet jupiter"></div>
+          <div class="info">Jupiter: Planet terbesar di Tata Surya</div>
+        </div>
+        <div class="orbit saturnus">
+          <div class="planet saturnus"></div>
+          <div class="info">Saturnus: Memiliki cincin yang spektakuler</div>
+        </div>
+        <div class="orbit uranus">
+          <div class="planet uranus"></div>
+          <div class="info">Uranus: Berputar miring hampir 90 derajat</div>
+        </div>
+        <div class="orbit neptunus">
+          <div class="planet neptunus"></div>
+          <div class="info">Neptunus: Planet terjauh dari Matahari</div>
+        </div>
+      </div>
+    </footer>
+    <script src="tulis.js"></script>
+  </body>
 </html>

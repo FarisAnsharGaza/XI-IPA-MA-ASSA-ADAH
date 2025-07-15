@@ -8,7 +8,7 @@ const slogans = [
   "Invent the future — with science.",
   "From atoms to galaxies, we connect the dots.",
   "Science: Powered by questions, proven by evidence.",
-  "Because every great idea starts with a 'what if…?'"
+  "Because every great idea starts with a 'what if…?'",
 ];
 
 let index = 0;

@@ -1,190 +1,235 @@
-.header1{
-    background:url(header.jpg);
-    -webkit-text-fill-color: #ffffff;
-    justify-content: left;
-    font-family: 'Times New Roman';
-    font-size: 70pt;
-    width: 100%; 
-    height: 300px;
-    margin: 0%;
-    padding: 0%;
-    border-radius: 10px;
-    outline: 3px solid #00ffcc;
-    text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black,
-    0px -2px 0 black,
-    0px 2px 0 black,
-    -2px 0px 0 black,
+.header1 {
+  background: url(header.webp);
+  -webkit-text-fill-color: #ffffff;
+  justify-content: left;
+  font-family: "Times New Roman";
+  font-size: 70pt;
+  width: 100%;
+  height: 300px;
+  margin: 0%;
+  padding: 0%;
+  border-radius: 10px;
+  outline: 3px solid #00ffcc;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 0px -2px 0 black, 0px 2px 0 black, -2px 0px 0 black,
     2px 0px 0 black;
-    animation: kontrol 1s infinite;
+  animation: kontrol 20s infinite;
 }
-.heading1{
-    margin-bottom: 50px;
-    font-family:'Times New Roman';
-    font-size: 32pt;
-    align-content: center;
-    text-align: center;
+.heading1 {
+  margin-bottom: 50px;
+  font-family: "Times New Roman";
+  font-size: 32pt;
+  align-content: center;
+  text-align: center;
 }
-.heading2{
-    font-size: 22pt;
-    font-family:'Times New Roman';
-    text-align: center;
-    margin: 0px;
-    margin-top: 50px;
+.heading2 {
+  font-size: 22pt;
+  font-family: "Times New Roman";
+  text-align: center;
+  margin: 0px;
+  margin-top: 50px;
 }
 /*you untuk baris agar sejajar foto/kotak divnya*/
 .you {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .love {
-    text-align: center;
-    font-size: 1rem;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .foto {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);    
-    object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 
 .kotak {
-    width: 150px;
-    max-width: 90vw;
-    text-align: center;
-    font-size: 1rem;
-    background: linear-gradient(to bottom, #0bff03, #00ffd5);
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
-                inset -5px -5px 10px rgba(255, 255, 255, 0.2);
-    margin: 20px;
-    border-radius: 15px;
-    padding: 15px;
-    box-sizing: border-box;
+  width: 150px;
+  max-width: 90vw;
+  text-align: center;
+  font-size: 1rem;
+  background: linear-gradient(to bottom, #0bff03, #00ffd5);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2);
+  margin: 20px;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 /* Responsif untuk tablet */
 @media (max-width: 768px) {
-    .kotak {
-        width: 45%;
-    }
+  .kotak {
+    width: 45%;
+  }
 }
 
 /* Responsif untuk HP */
 @media (max-width: 480px) {
-    .kotak {
-        width: 90%;
-    }
+  .kotak {
+    width: 90%;
+  }
 
-    .foto {
-        width: 120px;
-        height: 120px;
-    }
+  .foto {
+    width: 120px;
+    height: 120px;
+  }
 
-    .love {
-        font-size: 0.9rem;
-    }
+  .love {
+    font-size: 0.9rem;
+  }
 }
-.kaki{
-	background: linear-gradient(to left, #b769ff, #00fcc5);
-    height: 200px;
-    color: #000000;
-     text-align: center;
+.kaki {
+  background: linear-gradient(to left, #b769ff, #00fcc5);
+  height: 200px;
+  color: #000000;
+  text-align: center;
   padding: 20px;
   font-size: larger;
 }
 
- .angkasa {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .solar-system {
-            position: relative;
-            width: 400px;
-            height: 400px;
-        }
-        .sun {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: yellow;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .orbit {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border: 1px dashed rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            transform-origin: center;
-            animation: orbit 5s linear infinite;
-        }
-        .planet {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: blue;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translateX(150px);
-        }
-        @keyframes orbit {
-            from { transform: translate(-50%, -50%) rotate(0deg); }
-            to { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-        @keyframes kontrol{
-            0%, 100% {
-                outline:  3px solid #ff0000;
-                outline-offset: 0;
-                box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
-            }
-            50%{
-                 outline:  3px #0026ff;
-                box-shadow: none;
-                outline-style: solid;
-            }
-        }
+.angkasa {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.solar-system {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.sun {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.orbit {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform-origin: center;
+  animation: orbit 5s linear infinite;
+}
+.planet {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(150px);
+}
+@keyframes orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes kontrol {
+  0%,
+  100% {
+    outline: 3px solid #ff0000;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  90% {
+    outline: 3px solid #00ccff;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  80% {
+    outline: 3px solid #ff00f2;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  70% {
+    outline: 3px solid #d0ff00;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  60% {
+    outline: 3px solid #ff9100;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  50% {
+    outline: 3px #0026ff;
+    box-shadow: none;
+    outline-style: solid;
+  }
+  40% {
+    outline: 3px solid #ff0000;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  30% {
+    outline: 3px solid #00ccff;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  20% {
+    outline: 3px solid #ff00f2;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  10% {
+    outline: 3px solid #d0ff00;
+    outline-offset: 0dotted;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  0% {
+    outline: 3px solid #ff9100;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+}
 
-         @keyframes asep{
-            0%, 100% {
-                outline:  3px solid #ff0000;
-                outline-offset: 0;
-                box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
-            }
-            50%{
-                 outline:  3px #05a500;
-                box-shadow: none;
-                outline-style: solid;
-            }
-        }
-   
-  .motivasi{
- height: 100%;
+@keyframes asep {
+  0%,
+  100% {
+    outline: 3px solid #ff0000;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #ff0000 0 0 20px #ff0000;
+  }
+  50% {
+    outline: 3px #05a500;
+    box-shadow: none;
+    outline-style: solid;
+  }
+}
+
+.motivasi {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000;
-  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,13 +244,13 @@
 
 /* Ubah di sini */
 .slogan-text {
-  color: #1eff00;
+  color: rgb(0, 0, 0);
   font-size: 22pt;
-  border-right: 2px solid #3cff00;
+  border-right: 2px solid #000000;
   display: inline-block;
   overflow: hidden;
   word-wrap: break-word; /* biar bisa pindah baris */
-  white-space: normal;   /* ✅ ubah dari nowrap jadi normal */
+  white-space: normal; /* ✅ ubah dari nowrap jadi normal */
   padding: 10px;
 }
 
@@ -216,83 +261,77 @@
   }
 }
 /*buat ingfo atau berita semoga*/
-.berita{
-    width: 200px;
-    height: 200px;
-    align-items: left;
-    box-shadow: inset#000000;
-    border-radius: 20px;
-    background: #b769ff;
-    display: block;
-    
+.berita {
+  width: 250px;
+  height: 200px;
+  align-items: left;
+  box-shadow: inset#000000;
+  border-radius: 20px;
+  background: #b769ff;
+  display: block;
 }
-.botak{
-    width: 100%;
-    height: auto;
-    outline: 5px #000000;
-    border-radius: 10px;
-    animation: botak 1s infinite;
+.botak {
+  width: 100%;
+  height: auto;
+  outline: 5px #000000;
+  border-radius: 10px;
+  animation: botak 1s infinite;
+  outline-style: dashed;
+}
+
+@keyframes botak {
+  0%,
+  100% {
+    outline: 3px #ff0000;
+    outline-offset: 0;
+    box-shadow: 0 0 10px #00b7ff 0 0 20px #3dff02;
+    outline-style: dotted;
+  }
+  50% {
+    outline: 3px #2bff00;
+    box-shadow: none;
     outline-style: dashed;
+  }
 }
 
-  @keyframes botak{
-            0%, 100% {
-                outline: 3px #ff0000;
-                outline-offset: 0;
-                box-shadow: 0 0 10px #00b7ff 0 0 20px #3dff02;
-                outline-style: dotted;
-                
-            }
-            50%{outline:  3px #2bff00;
-                box-shadow: none;
-                outline-style: dashed;
-            }
-  }
+.ingfo {
+  font-size: 16pt;
+}
+.author {
+  font-size: 18pt;
+  font-style: normal;
+}
 
-  .ingfo{
-    font-size: 16pt;
-  }
-  .author{
-    font-size: 18pt;
-    font-style: normal;
-  }
-
-.ingfoheader{
-    background:url(alam.jpg);
-    -webkit-text-fill-color: #ffffff;
-    justify-content: left;
-    font-family: 'Times New Roman';
-    font-size: 70pt;
-    width: 100%; 
-    height: 258px;
-    margin: 0%;
-    padding: 0%;
-    border-radius: 10px;
-    outline: 3px solid #00ffcc;
-    text-shadow:
-    -2px -2px 0 black,
-    2px -2px 0 black,
-    -2px 2px 0 black,
-    2px 2px 0 black,
-    0px -2px 0 black,
-    0px 2px 0 black,
-    -2px 0px 0 black,
+.ingfoheader {
+  background: url(alam.webp);
+  -webkit-text-fill-color: #ffffff;
+  justify-content: left;
+  font-family: "Times New Roman";
+  font-size: 70pt;
+  width: 100%;
+  height: 258px;
+  margin: 0%;
+  padding: 0%;
+  border-radius: 10px;
+  outline: 3px solid #00ffcc;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black, 0px -2px 0 black, 0px 2px 0 black, -2px 0px 0 black,
     2px 0px 0 black;
-    animation: asep 1s infinite;
+  animation: asep 1s infinite;
 }
 
 #slogansi {
-      font-family: Arial, sans-serif;
-      font-size: 24px;
-      white-space: nowrap;
-      border-right: 2px solid black;
-      overflow: hidden;
-      width: fit-content;
-      text-align: center;
-    }
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  white-space: nowrap;
+  border-right: 2px solid black;
+  overflow: hidden;
+  width: fit-content;
+  text-align: center;
+}
 
 /*loaderrrrrrrrrrrrr*/
-    /* Tambahkan gaya ring loader seperti di contoh kamu */
+/* Tambahkan gaya ring loader seperti di contoh kamu */
 .atom-wrapper {
   display: flex;
   justify-content: center;
@@ -343,17 +382,33 @@
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.nom{
-    font-size: 16pt;
+.nom {
+  font-size: 16pt;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-position: inside;
+  padding-left: 20px;
 }
-li{
-    font-size: 16pt;
+li {
+  font-size: 16pt;
 }
 
-h3{
-    font-size: 16pt;
+h3 {
+  font-size: 16pt;
+}
+.bodong {
+  font-size: 16pt;
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
 }
