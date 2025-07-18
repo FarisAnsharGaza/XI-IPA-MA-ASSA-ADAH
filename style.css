@@ -55,11 +55,11 @@
 }
 
 .kotak {
-  width: 150px;
+  width: 250px;
   max-width: 90vw;
   text-align: center;
   font-size: 1rem;
-  background: linear-gradient(to bottom, #0bff03, #00ffd5);
+  background: linear-gradient(to right, #03c4ff, #00fff2);
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
     inset -5px -5px 10px rgba(255, 255, 255, 0.2);
   margin: 20px;
@@ -70,14 +70,14 @@
 /* Responsif untuk tablet */
 @media (max-width: 768px) {
   .kotak {
-    width: 45%;
+    width: 250px;
   }
 }
 
 /* Responsif untuk HP */
 @media (max-width: 480px) {
   .kotak {
-    width: 90%;
+    width: 250px;
   }
 
   .foto {
@@ -402,6 +402,7 @@
 }
 li {
   font-size: 16pt;
+  text-align: left;
 }
 
 h3 {
@@ -411,4 +412,30 @@ h3 {
   font-size: 16pt;
   margin-bottom: 6px;
   letter-spacing: 0.5px;
+}
+.box {
+  width: 150px;
+  max-width: 90vw;
+  text-align: center;
+  font-size: 1rem;
+  background: linear-gradient(to right, #fffb03, #ffc400);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.2);
+  margin: 20px;
+  border-radius: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+  .box {
+    width: 150px;
+  }
+}
+
+/* Responsif untuk HP */
+@media (max-width: 480px) {
+  .box {
+    width: 150px;
+  }
 }
